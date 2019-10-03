@@ -1,12 +1,8 @@
-==========================
-Welcome in pyModis library
-==========================
+=======
+PyMODIS
+=======
 
-*Thank you for downloading pyModis*
-
-**pyModis is a Python library to download and process MODIS data from NASA server**
-
-Copyright Luca Delucchi - 2010-2014
+This is a fork of the original `pyModis <https://github.com/lucadelu/pyModis>`_ package.
 
 License
 -------
@@ -31,11 +27,3 @@ Some executables are distributed with the library:
   * **modis_mosaic** creates the mosaic of multiple MODIS tiles
   * **modis_convert** converts MODIS data from HDF format and Sinusoidal projection to other formats and projections
   * **modis_quality** checks the quality of MODIS data using the QA layer
-
-
-Other info
-----------
-
-The logo of pyModis is pyModis.png; it is released under CC-BY-SA and it's distributed with the pyModis library
-
-More info about pyModis at http://www.pymodis.org/

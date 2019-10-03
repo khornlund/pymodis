@@ -63,6 +63,9 @@ except ImportError:
                           'python-gdal')
 
 
+from pymodis.parse.metadata import parseModisMulti
+import os
+
 RESAM_GDAL = ['AVERAGE', 'BILINEAR', 'CUBIC', 'CUBIC_SPLINE', 'LANCZOS',
               'MODE', 'NEAREST_NEIGHBOR']
 SINU_WKT = 'PROJCS["Sinusoidal_Sanson_Flamsteed",GEOGCS["GCS_Unknown",' \
@@ -576,8 +579,6 @@ class createMosaicGDAL:
 
            :param str prefix: the prefix for the XML file containing metadata
         """
-        from .parsemodis import parseModisMulti
-        import os
         listHDF = []
         for i in self.in_names:
             listHDF.append(os.path.realpath(i.strip()))
